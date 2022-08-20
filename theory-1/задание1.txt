@@ -1,0 +1,29 @@
+const arr = [10, 12, 15, 21];
+
+1) исправлена ошибка "var" на "let" в исходном коде.
+
+for (let i = 0; i < arr.length; i++) {
+  setTimeout(function() {
+    console.log(arr[i] > 13 ? `good: ${arr[i]}` : `bad: ${arr[i]}`)
+  }, 3000)
+}
+
+2) переписан код под цикл "for of"
+
+for (let elem of arr) {
+  setTimeout(function() {
+    if (elem < 13) {
+      console.log('bad: ' + elem)
+    } else {
+      console.log('good: ' + elem)
+    }
+  }, 3000)
+}
+
+3) переписан код под метод "forEach"
+
+arr.forEach(function(item, i, arr) {
+  setTimeout(function() {
+    console.log(arr[i] > 13 ? `Good:  ${arr[i]}` : `Bad:  ${arr[i]}`)
+  }, 3000)
+});

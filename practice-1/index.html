@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+<body>
+    <div class="shadow-screen _d-none"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__btn">
+                <a href="#">Открыть модальное окно</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal _d-none">
+        <div class="modal__title">
+            Стать партнёром проекта
+        </div>
+        <form class="modal__form">
+            <div class="modal__top">
+                <div class="modal__item">
+                    <div class="text-field">
+                        <label class="text-field__label" for="name-organization"><span></span>Название организации</label>
+                        <input class="text-field__input _pt-8" type="text" id="name-organization" placeholder="АВЦ">
+                    </div>
+                    <div class="text-field">
+                        <label class="text-field__label" for="phone"><span></span>Телефон</label>
+                        <input class="text-field__input _pt-8" type="text" id="phone" placeholder="+7 933 848-34-33">
+                    </div>
+                    <div class="text-field">
+                        <label class="text-field__label" for="email"><span></span>E-mail</label>
+                        <input class="text-field__input _pt-8" type="text" id="email" placeholder="avc@gmail.com">
+                    </div>
+                </div>
+                <div class="modal__item">
+                    <div class="avatar-loader">
+                        <div class="avatar-loader__title">
+                            <span></span>Логотип (jpeg, png)
+                        </div>
+                        <div class="avatar-loader__content">
+                            <div class="avatar-loader__close">
+                                <a href="#"></a>
+                            </div>
+                            <div class="avatar-loader__icon">
+                                <label for="pct">
+                                    <div class="avatar-loader__text">
+                                        Выберите<br> файл
+                                    </div>
+                                </label>
+                                <input type="file" id="pct">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <div class="select-wrap">
+                    <label class="select__label"><span></span>Направление</label>
+                    <select class="select__input">
+                        <option value="Экология">Экология</option>
+                        <option value="Энергетика">Энергетика</option>
+                    </select>
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="avc" placeholder="avc.ru">
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="vk" placeholder="vk.com/shans">
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="ok" placeholder="ok.com/shans">
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="facebook" placeholder="facebook.com/shans">
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="instagram" placeholder="instagram.com/shans">
+                </div>
+                <div class="text-field">
+                    <input class="text-field__input" type="text" id="youtube" placeholder="youtube.com/shans">
+                </div>
+                <div class="text-field">
+                    <label class="text-field__label" for="director">Руководитель</label>
+                    <input class="text-field__input _pt-8" type="text" id="director" placeholder="Александров Иван Васильевич">
+                </div>
+            </div>
+            <div class="modal__btns">
+                <div class="modal__send">
+                    <button type="submit" id="sender">Стать партнёром проекта</button>
+                </div>
+                <div class="modal__close">
+                    <a href="#">Отменить</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

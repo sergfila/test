@@ -1,0 +1,31 @@
+/* Media */
+@media (max-width: 992px) {
+    .modal {
+        padding: 40px 50px;
+    }
+}
+@media (max-width: 576px) {
+    .modal {
+        padding: 32px;
+    }
+    .modal__title {
+        text-align: center;
+    }
+    .modal__top {
+        flex-direction: column;
+    }
+    .modal__item {
+        flex: 1 1 100%;
+    }
+    .modal__item:first-child {
+        order: 2;
+    }
+    .modal__item:last-child {
+        order: 1;
+    }
+}
+@media (max-width: 360px) {
+    .modal {
+        padding: 16px;
+    }
+}
