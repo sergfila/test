@@ -9,4 +9,7 @@ th, td {
 th {
     cursor: pointer;
 }
-
+.search {
+    margin-bottom: 20px;
+    padding: 6px 16px;
+}
