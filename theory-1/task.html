@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>theory/task1</title>
+</head>
+<body>
+const arr = [10, 12, 15, 21];<br>
+<br>
+1) исправлена ошибка "var" на "let" в исходном коде.<br>
+
+for (let i = 0; i < arr.length; i++) {<br>
+setTimeout(function() {<br>
+console.log(arr[i] > 13 ? `good: ${arr[i]}` : `bad: ${arr[i]}`)<br>
+}, 3000)<br>
+}<br>
+<br>
+2) переписан код под цикл "for of"<br>
+
+for (let elem of arr) {<br>
+setTimeout(function() {<br>
+if (elem < 13) {<br>
+console.log('bad: ' + elem)<br>
+} else {<br>
+console.log('good: ' + elem)<br>
+}<br>
+}, 3000)<br>
+}<br>
+<br>
+3) переписан код под метод "forEach"<br>
+
+arr.forEach(function(item, i, arr) {<br>
+setTimeout(function() {<br>
+console.log(arr[i] > 13 ? `Good:  ${arr[i]}` : `Bad:  ${arr[i]}`)<br>
+}, 3000)<br>
+});<br>
+</body>
+</html>
