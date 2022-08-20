@@ -1,3 +1,12 @@
-table  { border-collapse: collapse; }
-th, td { padding: 0.2em 0.4em; border: 1px solid #cccccc; }
-th { cursor: pointer; }
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    cursor: pointer;
+}
+
